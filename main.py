@@ -64,7 +64,9 @@ while True:
     # para cada face encontrada, encontrar marcadores faciais
 
     for (i, rect) in enumerate(rects):
+        
         # executa a predicao e a converte em numpy array
+        
         shape = predictor(gray, rect)
         shape = face_utils.shape_to_np(shape)
 
