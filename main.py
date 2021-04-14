@@ -231,7 +231,7 @@ df_sd = pd.DataFrame({"pitch":[np.std(df.pitch)],
                     "roll":[np.std(df.roll)]},
                     index=["sd"])
 
-#adiciona a linda com os sds ao dataframe com as observacoes
+#adiciona a linha com o valor de cada desvio padrao
 
 df = pd.concat([df, df_sd])
 
