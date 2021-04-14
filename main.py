@@ -18,7 +18,7 @@ def shape_to_np(shape, dtype="int"):
 
 arquivo = "caminho do arquivo"
 
-# p = modelo pre treinado / esta na pasta de trabalho.
+# p = modelo pre treinado / esta na pasta de trabalho. disponivel em http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
 
 p = "shape_predictor_68_face_landmarks.dat"
 detector = dlib.get_frontal_face_detector()
