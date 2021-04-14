@@ -15,7 +15,6 @@ def shape_to_np(shape, dtype="int"):
         coords[i] = (shape.part(i).x, shape.part(i).y)
     return coords  # retorna lista de coordenadas (x, y)
 
-
 # arquivo a ser analisado
 
 arquivo = "caminho arquivo"
@@ -239,7 +238,6 @@ print("Desvio padrão roll: {} ".format(round(np.std(df.roll), 2)))
 
 # criacao de dataframe com desvios padroes
 
-lista_sd = [np.std(df.pitch), np.std(df.pitch), np.std(df.pitch)]
 df_sd = pd.DataFrame({"pitch": [np.std(df.pitch)],
                       "yaw": [np.std(df.yaw)],
                       "roll": [np.std(df.roll)]},
