@@ -33,7 +33,7 @@ lista_angulos = []
 
 cap = cv2.VideoCapture(arquivo)
 
-while True:
+while cap.isOpened():
 
     # captura do frame
 
