@@ -33,12 +33,17 @@ lista_angulos = []
 
 cap = cv2.VideoCapture(arquivo)
 
-while cap.isOpened():
+while True:
 
     # captura do frame
 
     _, image = cap.read()
 
+    #sair do loop quando o video acabar
+
+    if _ == False:
+        break
+        
     # variavel utilizada para configuracao da camera
 
     size = image.shape
